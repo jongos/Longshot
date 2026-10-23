@@ -8,7 +8,7 @@
 
 > **Your design has a point of view. Give it a second pair of eyes.**
 >
-> Longshot gives your agent a structured way to test the interface from a user's task. It reports evidence, uncertainty and useful behavior to preserve. Agent observations do not replace research with real people.
+> No tester available? Give Longshot a goal and let it put your interface through its paces. It attempts the task, shows where the experience breaks down, and returns evidence you can act on. Agent observations do not replace research with real people.
 
 **Start here:** [Install and Invoke](#install-and-invoke) · [Use Cases](#what-you-can-use-it-for) · [Example Finding](#a-finding-you-can-act-on) · [Review Loops](#how-the-loops-work) · [Companion Projects](#dazzler-style-science-and-longshot)
 
@@ -33,6 +33,21 @@ Longshot is deliberately skeptical of the happy path, including the one a design
 
 The intended benefit is a more actionable review: fewer unsupported assertions, clearer priorities, preserved safeguards and concrete acceptance tests. These are the skill's goals, not measured claims of improved human outcomes.
 
+## A First Encounter, Then a Diagnosis
+
+Longshot first tries to discover the route using the interface, without reading source code or a designer's click-by-click solution. It records what the available cues suggest before consequential ambiguous actions, then compares those expectations with the actual result. If it already knows the solution, it discloses that limit rather than claiming a fresh perspective.
+
+Only after recording that attempt does it use authorized implementation evidence to investigate. A task completed with hidden information is not reported as unassisted discovery. A control found through an accessibility tree does not prove that its visual presentation is discoverable.
+
+| What It Records | Why It Matters |
+| --- | --- |
+| Completion: completed, blocked, uncertain or untested | A pending operation is not automatically a failure. |
+| Assistance: backtracking, ordinary help or privileged information | A successful workaround can conceal an obstacle in the original route. |
+| Conditions: first visit, returning draft, comparison, keyboard, zoom or interruption | Concrete task conditions replace speculative demographic roleplay. |
+| Aftermath: find, reopen, correct or recover the result | A success screen is only part of the job. |
+
+Longshot chooses relevant conditions rather than expanding every request into a full audit. It records working behavior as well as obstacles and can return no findings when the evidence supports that conclusion.
+
 ## Install and Invoke
 
 With the [Skills CLI](https://skills.sh/docs):
@@ -44,24 +59,26 @@ npx skills add jongos/Longshot --skill longshot-human-centered-ui
 Or copy `skills/longshot-human-centered-ui` into your agent's discoverable skills directory. For Codex, use `~/.codex/skills/longshot-human-centered-ui/`.
 
 ```text
-Use $longshot-human-centered-ui to test creating a draft, consulting a
-reference, and returning to finish it in this isolated demo. Challenge
-the workflow. Report reproducible findings and acceptance tests.
+Use $longshot-human-centered-ui to test this demo app.
+The intended user is a first-time visitor who needs to prepare a draft
+using a required reference, then return later to finish it.
+Use only the supplied synthetic test account. Report completion,
+assistance needed, reproducible obstacles and acceptance tests.
 Do not modify the application.
 ```
 
 The skill's display name is **Longshot**. Its identifier is **longshot-human-centered-ui**. It replaces the earlier `human-centered-ui-review` identifier; remove an obsolete duplicate installation when upgrading. Automatic selection is enabled for interface testing and usability reviews, not ordinary fixes or factual questions.
 
-Longshot needs a host agent with suitable browser or application tools and an authorized test environment. No separate runtime, paid model, Jev account or companion skill is required. Without interaction access, it can review supplied evidence, but must label the result as limited evidence review rather than a live walkthrough.
+Longshot needs a host agent with suitable browser or application tools and an authorized test environment. No separate runtime, paid evaluation service or companion skill is required. A goal, an interface and authorized access are enough to start; no persona questionnaire or prepared test plan is required. Without interaction access, it can review supplied evidence, but must label the result as limited evidence review rather than a live walkthrough.
 
 ## How the Loops Work
 
 Longshot specifies bounded review cycles carried out by the host agent:
 
-1. **Attempt:** establish a user goal, authorized boundary and observable completion condition; try the rendered interface.
-2. **Observe:** capture actions, states and results, distinguishing visual evidence from accessibility-tree, DOM or service evidence.
-3. **Challenge:** consider an alternative route, interruption or competing explanation. Designer intent is context, not proof.
-4. **Verify and report:** reproduce consequential issues where authorized, describe uncertainty, and recommend an observable acceptance test.
+1. **Attempt:** establish a goal, boundary and completion condition; discover the route through the rendered interface before diagnosis.
+2. **Observe:** record action-relevant expectations, outcomes and assistance, distinguishing visual evidence from accessibility-tree, DOM or service evidence.
+3. **Challenge:** consider an authorized alternative, interruption or competing explanation. Designer intent is context, not proof.
+4. **Verify and report:** check meaningful completion and relevant aftermath, reproduce consequential issues where authorized, and recommend a falsifiable acceptance test.
 
 The cycle stops at the agreed scope, evidence limits or action boundary. An unavailable role is not a product defect. A timeout is not necessarily a failed operation. Never repeatedly submit an uncertain transaction.
 
@@ -72,6 +89,8 @@ A later fix-and-retest cycle requires separate implementation authorization. Lon
 A report scaled to the request, with:
 
 - Overall disposition, coverage limits and consequential findings first.
+- Whether the task completed, what assistance was needed and whether prior knowledge affected discovery.
+- A compact journey/state coverage map for the conditions actually attempted.
 - Task/state, expected versus observed behavior, reproducible evidence and relevant authorized screenshots.
 - Separate classifications for defects, usability concerns and aesthetic preferences; execution limits and cause attribution remain distinct.
 - Severity and confidence with explanations, not a composite score that hides critical problems.
@@ -95,6 +114,8 @@ A report scaled to the request, with:
 
 See the [finding template](skills/longshot-human-centered-ui/references/finding-template.md) and [retained research](skills/longshot-human-centered-ui/references/research.md).
 
+Important findings include a replayable record: **starting state → actions → evidence → observed outcome → acceptance test**. Longshot uses existing screenshots and traces when available, states what is missing, and keeps sensitive test content out of reports. Recommendations identify the smallest useful change, safeguards to preserve, tradeoffs and a result that would disprove the expected benefit. Later authorized retesting compares the same conditions and checks for regressions.
+
 ## Dazzler, Style Science and Longshot
 
 | Project | Primary Responsibility |
@@ -116,6 +137,8 @@ Sources: [Marvel's Longshot collection](https://www.marvel.com/comics/collection
 ## Validation and Limits
 
 Current validation includes structural checks and small synthetic text-packet exercises. The [original record](validation/RESULTS.md) and [rename/independent-role check](validation/rename-independent-role.md) state exactly what ran. They do not establish broad reliability on rendered applications.
+
+The [walkthrough protocol update](validation/walkthrough-protocol.md) records the limited checks for first-encounter isolation, evidence provenance and recommendation safeguards. Human-grounded benchmark research is planned; a held-out human comparison has not been run. The [evaluation plan](validation/human-grounded-plan.md) defines what would count as stronger evidence without presenting future tests as completed work.
 
 Agent observations are not human participant evidence. Longshot cannot infer human confusion, satisfaction or success rates from its own behavior. Automated accessibility checks and agent keyboard tests do not constitute a complete accessibility assessment.
 

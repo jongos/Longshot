@@ -9,6 +9,7 @@ For a narrow review, combine the finding fields into one short paragraph rather 
 - Disposition: what can/cannot be concluded about the tested journey; mention blockers directly.
 - Scope and coverage: intended users/goals, environment/version, authorized data/actions, paths and states attempted, viewport/input method where known.
 - Execution and cause: completed, blocked or untested branches; distinguish product behavior from tool/environment limitations or unknown causes. A blocked review can coexist with correct product behavior.
+- Assistance and first encounter: record backtracking, ordinary UI help and privileged information separately from outcome (including uncertain). Disclose prior solution knowledge; distinguish first-pass attempts from diagnostic completion.
 - Evidence limits: live agent observations versus supplied traces/screenshots versus simulations; inaccessible or untested behavior; no human participant research unless actually supplied/performed.
 - Most consequential findings, followed by working behavior worth preserving.
 
@@ -18,6 +19,8 @@ For a narrow review, combine the finding fields into one short paragraph rather 
 
 - **Task/state:** goal, preconditions, route and relevant input.
 - **Evidence:** reproducible action sequence and actual result, with an artifact locator or screenshot caption when available. Identify supplied versus directly observed evidence and simulation.
+- **Replay context:** sanitized inputs, application/build when known, starting state, viewport/zoom/input method, action and artifact references, terminal verification and safe reset instructions where relevant. Missing details remain explicit.
+- **Expectation check, when recorded:** cue and predicted outcome captured before the action, then actual outcome. Identify its basis; do not backfill a prediction or present it as human testimony.
 - **Validation and alternatives:** reproduction or countercheck actually performed, competing explanations, and remaining proposed checks. Identify the evidence channel; do not call an intended test executed.
 - **Expected / observed:** state both; give the requirement, contract, convention or goal supporting the expectation.
 - **Human consequence:** concrete potential impact; label inference and unknown frequency.
