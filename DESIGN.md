@@ -11,3 +11,9 @@ Semantic colors: paper #f5f1e8, ink #20231e, action/accent #a33512, secondary fi
 Structure: proposition and illustrative finding; method; task use cases; bounded loops; report anatomy; install/invoke; companion roles; sourced namesake; limitations. Native links and semantic HTML, no JavaScript dependency. Small-screen layouts linearize the same content and reading order.
 
 Content boundary: claims concern skill instructions and documented synthetic validation. No human outcome, complete accessibility, model reliability, directory acceptance or paid-service guarantee is implied. Comics exposition is a personal tribute with source links, not Marvel affiliation.
+
+## README Presentation — 2026-10-23
+
+Adapted the field-report identity to GitHub's constrained Markdown renderer: an original self-contained SVG masthead, visible task-loop labels, quick-start navigation, installation command and a synthetic finding table. All meaningful banner text has an alternative; essential instructions remain native Markdown. GitHub owns body typography and theme, so the banner uses system sans-serif and an explicit paper background. No external fonts, scripts, badges implying verification or Marvel art were added.
+
+Validation: heading audit passed all 11 Markdown headings. A local Markdown preview at 1100px and 390px loaded the banner and showed no page-level horizontal overflow; installation code and tables scroll within their regions. Both views were visually inspected. This preview approximates GitHub styling; it is not proof of GitHub's exact theme rendering or a full accessibility assessment. No skill behavior or real application testing changed.

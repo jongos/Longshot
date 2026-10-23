@@ -1,12 +1,20 @@
-# Longshot
+![Longshot — Make the Interface Prove It. Independent interface testing: attempt, observe, challenge, verify.](docs/longshot-readme.svg)
 
-### Make the Interface Prove It.
+# Longshot
 
 **An independent agent skill for testing human-facing interfaces.** Longshot attempts realistic tasks, challenges design assumptions, and returns reproducible findings with recommendations you can verify.
 
 [Visit the Website](https://jongos.github.io/Longshot/) · [Read the Skill](skills/longshot-human-centered-ui/SKILL.md) · [Validation](validation/rename-independent-role.md) · [Report an Issue](https://github.com/jongos/Longshot/issues)
 
-Your design has a point of view. Give it a second pair of eyes.
+> **Your design has a point of view. Give it a second pair of eyes.**
+>
+> Longshot gives your agent a structured way to test the interface from a user's task. It reports evidence, uncertainty and useful behavior to preserve. Agent observations do not replace research with real people.
+
+**Start here:** [Install and Invoke](#install-and-invoke) · [Use Cases](#what-you-can-use-it-for) · [Example Finding](#a-finding-you-can-act-on) · [Review Loops](#how-the-loops-work) · [Companion Projects](#dazzler-style-science-and-longshot)
+
+```sh
+npx skills add jongos/Longshot --skill longshot-human-centered-ui
+```
 
 A companion to **[Dazzler](https://github.com/jongos/Dazzler)** and **[Style Science](https://github.com/jongos/style-science)**: Dazzler creates and refines the interface; Style Science makes its design reasoning and constraints inspectable; Longshot independently tests the experience. Use them together or use Longshot on its own.
 
@@ -70,7 +78,20 @@ A report scaled to the request, with:
 - Recommendations addressing the evidenced obstacle, useful behavior to preserve, and acceptance tests that could contradict the recommendation.
 - Neutral follow-up tasks for actual human research.
 
-**Illustrative finding:** a required reference screen clears a draft when the user returns. Recommend preserving the draft across navigation, retain the code-verification requirement, and test restoration. Do not claim that the stored record was permanently deleted unless the evidence establishes that. This example is synthetic.
+### A Finding You Can Act On
+
+*Synthetic example of report structure, not a result from an actual application.*
+
+| Field | Example |
+| --- | --- |
+| Task | Create a draft, consult a required reference, return to finish. |
+| Evidence | In this fictional fixture, entering text, opening the reference and returning leaves the editor empty. |
+| Expected / observed | The in-progress draft remains available / the visible input is cleared. |
+| Consequence | The user must re-enter work to continue. Permanent deletion of a stored record is not established. |
+| Classification | Defect: lost visible input during a required journey. |
+| Severity / confidence | High if the journey requires substantial re-entry; confidence applies only to the stipulated fixture behavior. |
+| Recommendation | Preserve the draft across reference navigation. Keep the useful verification requirement. |
+| Acceptance test | Enter distinct text in each field, visit the reference, return and verify every value is restored. |
 
 See the [finding template](skills/longshot-human-centered-ui/references/finding-template.md) and [retained research](skills/longshot-human-centered-ui/references/research.md).
 
