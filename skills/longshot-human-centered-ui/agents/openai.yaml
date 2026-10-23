@@ -1,0 +1,6 @@
+interface:
+  display_name: "Longshot"
+  short_description: "Independent UI/UX testing with reproducible evidence"
+  default_prompt: "Use $longshot-human-centered-ui to independently test this interface through realistic tasks, challenge design assumptions, and report reproducible findings without modifying the application."
+policy:
+  allow_implicit_invocation: true
