@@ -8,6 +8,8 @@
 
 Your design has a point of view. Give it a second pair of eyes.
 
+A companion to **[Dazzler](https://github.com/jongos/Dazzler)** and **[Style Science](https://github.com/jongos/style-science)**: Dazzler creates and refines the interface; Style Science makes its design reasoning and constraints inspectable; Longshot independently tests the experience. Use them together or use Longshot on its own.
+
 Longshot is deliberately skeptical of the happy path, including the one a designer or superuser prefers. It asks whether the interface supports the user's task, follows the evidence, and reports supported strengths as well as flaws. It does not manufacture criticism to look useful.
 
 ## What You Can Use It For
