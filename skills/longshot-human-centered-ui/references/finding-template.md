@@ -12,10 +12,13 @@ For a narrow review, combine the finding fields into one short paragraph rather 
 - Assistance and first encounter: record backtracking, ordinary UI help and privileged information separately from outcome (including uncertain). Disclose prior solution knowledge; distinguish first-pass attempts from diagnostic completion.
 - Evidence limits: live agent observations versus supplied traces/screenshots versus simulations; inaccessible or untested behavior; no human participant research unless actually supplied/performed.
 - Most consequential findings, followed by working behavior worth preserving.
+- Relevant host capabilities: availability separately from scoped attempted/verified coverage, with evidence and limits. See [report continuity](report-continuity.md).
 
 ## Finding
 
 **ID and outcome-focused title**
+
+Preserve the ID when a prior finding matches; cite the prior run, changed conditions and current status. Keep original observations intact. For a comparison, include blocked and untested prior findings as well as reproduced findings; omission is not resolution.
 
 - **Task/state:** goal, preconditions, route and relevant input.
 - **Evidence:** reproducible action sequence and actual result, with an artifact locator or screenshot caption when available. Identify supplied versus directly observed evidence and simulation.

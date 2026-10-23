@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "example-002",
+  "mode": "synthetic_example",
+  "summary": "Fictional follow-up: saved draft opens correctly, but the original leave-and-return route is untested.",
+  "environment": {
+    "application": "Fictional draft editor",
+    "build": "fixture-v2 (authored scenario)",
+    "viewport": null,
+    "input_method": null,
+    "first_encounter": "not_applicable",
+    "boundary": "Authored synthetic text only; no live accounts, actions or participant data."
+  },
+  "capabilities": [
+    {
+      "capability": "visual interaction",
+      "scope": "all tasks",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "No browser session occurred."
+    },
+    {
+      "capability": "persistence verification",
+      "scope": "stored draft",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "Text stipulates visible state only; storage is not established."
+    },
+    {
+      "capability": "screenshots",
+      "scope": "all states",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "No screenshots were captured; no simulated screenshot is presented as evidence."
+    }
+  ],
+  "journeys": [
+    {
+      "task": "Open previously saved draft",
+      "condition": "return to saved record",
+      "outcome": "completed",
+      "assistance": [],
+      "evidence_ids": [
+        "E-003"
+      ],
+      "limit": "Different starting state from the original finding."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-003",
+      "provenance": "synthetic",
+      "channel": "authored text trace",
+      "locator": "trace.md#e-003-incomparable-follow-up",
+      "caption": "Existing saved draft opens; original reference-navigation route not attempted."
+    }
+  ],
+  "findings": [],
+  "comparisons": [
+    {
+      "finding_id": "LS-001",
+      "prior_run_id": "example-001",
+      "status": "untested",
+      "comparable": false,
+      "changed_conditions": [
+        "Build changed to v2.",
+        "Existing saved draft instead of unsaved input and reference navigation."
+      ],
+      "evidence_ids": [
+        "E-003"
+      ],
+      "reason": "No current finding does not mean repaired; original route remains untested.",
+      "acceptance_check": {
+        "result": "untested",
+        "evidence_ids": [],
+        "detail": "Original acceptance path not exercised."
+      },
+      "original_obstacle_check": {
+        "result": "untested",
+        "evidence_ids": [],
+        "detail": "Original acceptance path not exercised."
+      },
+      "preserved_behavior_check": {
+        "result": "untested",
+        "evidence_ids": [],
+        "detail": "Original acceptance path not exercised."
+      }
+    }
+  ],
+  "strengths": [
+    "Opening the existing saved draft displays both fields in the authored follow-up."
+  ],
+  "limitations": [
+    "Entire bundle is authored synthetic data, not a real test, screenshot, video or human study.",
+    "Viewport, input method, storage behavior and real first-encounter discovery are untested."
+  ],
+  "plan": [
+    "Retest LS-001 original route and preserved cancellation behavior before making any resolution claim."
+  ],
+  "human_follow_up": [
+    "Prepare a draft using the reference and continue editing. What do you expect to remain when you return?"
+  ]
+}

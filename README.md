@@ -116,6 +116,16 @@ See the [finding template](skills/longshot-human-centered-ui/references/finding-
 
 Important findings include a replayable record: **starting state → actions → evidence → observed outcome → acceptance test**. Longshot uses existing screenshots and traces when available, states what is missing, and keeps sensitive test content out of reports. Recommendations identify the smallest useful change, safeguards to preserve, tradeoffs and a result that would disprove the expected benefit. Later authorized retesting compares the same conditions and checks for regressions.
 
+### Evidence You Can Follow Across Runs
+
+Explore the [complete sample evidence bundle](examples/synthetic-evidence-bundle/README.md): a readable report, authored trace, working control, capability coverage and two JSON reports. It is entirely synthetic, with no invented screenshots or claims of executed tests.
+
+Longshot separates what a host **can access** from what a run **attempted or verified**. It preserves finding IDs across comparable reviews and records reproduced, not reproduced, verified resolved, blocked or untested outcomes. A finding disappearing from a later report does not make it fixed. The sample demonstrates this with an original navigation defect and a follow-up that never exercises that route.
+
+Markdown remains the default. Request an optional **JSON export (schema 1.0.0)** for downstream tooling; it preserves evidence references, uncertainty, recommendations and retest status. The [schema](skills/longshot-human-centered-ui/references/report-schema.json) and [continuity guide](skills/longshot-human-centered-ui/references/report-continuity.md) are bundled with the skill. No new service or runtime is required, and exporting does not authorize uploading to an issue tracker.
+
+Example follow-up: “Compare this authorized run with the attached prior report. Preserve finding IDs, distinguish untested from resolved, and also export JSON 1.0.0.”
+
 ## Dazzler, Style Science and Longshot
 
 | Project | Primary Responsibility |

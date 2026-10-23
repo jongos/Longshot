@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "example-001",
+  "mode": "synthetic_example",
+  "summary": "Fictional evidence: required reference navigation clears draft input. No application was run.",
+  "environment": {
+    "application": "Fictional draft editor",
+    "build": "fixture-v1 (authored scenario)",
+    "viewport": null,
+    "input_method": null,
+    "first_encounter": "not_applicable",
+    "boundary": "Authored synthetic text only; no live accounts, actions or participant data."
+  },
+  "capabilities": [
+    {
+      "capability": "visual interaction",
+      "scope": "all tasks",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "No browser session occurred."
+    },
+    {
+      "capability": "persistence verification",
+      "scope": "stored draft",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "Text stipulates visible state only; storage is not established."
+    },
+    {
+      "capability": "screenshots",
+      "scope": "all states",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "No screenshots were captured; no simulated screenshot is presented as evidence."
+    }
+  ],
+  "journeys": [
+    {
+      "task": "Prepare draft using required reference",
+      "condition": "leave and return",
+      "outcome": "blocked",
+      "assistance": [],
+      "evidence_ids": [
+        "E-001"
+      ],
+      "limit": "Scenario outcome only; no executed walkthrough."
+    },
+    {
+      "task": "Cancel reference navigation",
+      "condition": "cancel before leaving",
+      "outcome": "completed",
+      "assistance": [],
+      "evidence_ids": [
+        "E-002"
+      ],
+      "limit": "Scenario control, not human evidence."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-001",
+      "provenance": "synthetic",
+      "channel": "authored text trace",
+      "locator": "trace.md#e-001-draft-loss",
+      "caption": "Stipulated input and return state; does not establish server deletion."
+    },
+    {
+      "id": "E-002",
+      "provenance": "synthetic",
+      "channel": "authored text trace",
+      "locator": "trace.md#e-002-working-control",
+      "caption": "Cancellation retains input in the authored control."
+    }
+  ],
+  "findings": [
+    {
+      "id": "LS-001",
+      "title": "Required reference navigation clears working input",
+      "task": "Prepare draft using reference",
+      "preconditions": "Fixture v1; empty editor; supplied contract preserves draft across required reference navigation.",
+      "steps": [
+        "Enter title Sample draft and body Blue lantern.",
+        "Open required reference.",
+        "Return to editor."
+      ],
+      "expected": "Both entered values remain.",
+      "observed": "Both fields are empty in the authored trace.",
+      "expectation_basis": "Explicit fictional fixture contract, not an inferred human expectation.",
+      "consequence": "Re-entry may be required; permanent stored-record deletion is not established.",
+      "consequence_is_inference": true,
+      "classification": "confirmed_defect",
+      "severity": "high",
+      "severity_reason": "Loss of working input in required journey under the stipulated contract.",
+      "confidence": "high",
+      "confidence_reason": "The supplied synthetic facts directly contradict the fixture contract; not confidence about a real app.",
+      "cause": "product",
+      "evidence_ids": [
+        "E-001"
+      ],
+      "recommendation": {
+        "change": "Retain working draft across reference navigation.",
+        "preserve": "Reference requirement and cancellation that retains input.",
+        "tradeoff": "Define draft lifetime and account isolation rather than persisting indefinitely.",
+        "disconfirming_result": "If an authorized comparable replay already restores both values, the loss claim would not reproduce."
+      },
+      "acceptance_test": "Given distinct title/body values, open and return from the required reference; both values remain. Separately cancel navigation and confirm values remain."
+    }
+  ],
+  "comparisons": [],
+  "strengths": [
+    "Cancellation preserves working input in the synthetic control (E-002)."
+  ],
+  "limitations": [
+    "Entire bundle is authored synthetic data, not a real test, screenshot, video or human study.",
+    "Viewport, input method, storage behavior and real first-encounter discovery are untested."
+  ],
+  "plan": [
+    "Address draft retention while preserving the reference requirement; later retest under comparable conditions only when authorized."
+  ],
+  "human_follow_up": [
+    "Prepare a draft using the reference and continue editing. What do you expect to remain when you return?"
+  ]
+}
