@@ -1,0 +1,6 @@
+interface:
+  display_name: "Longshot"
+  short_description: "Agentic UI/UX testing of real tasks and recovery"
+  default_prompt: "Use $human-centered-ui-review to test this interface through realistic tasks and report evidence-based findings without modifying the application."
+policy:
+  allow_implicit_invocation: true
