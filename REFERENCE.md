@@ -8,6 +8,14 @@
 
 ## Evidence-supported follow-ups
 
+### Automatic and guided reviews
+
+Automatic mode selects a small set of important tasks from authorized context, weighing the core job, consequences, interruptions and recovery. Supplied roles/workflows activate guided scope; partial guidance is enough. Exact supplied steps are tested as a guided route. User-defined roles never grant account permissions. Task origin, assumptions and important exclusions stay visible in the report.
+
+The [walkthrough](skills/longshot-human-centered-ui/references/walkthrough-protocol.md) adds costly-success and decision-information checks, separate assessment of recommendations, and optional use of reviewed finding feedback. Feedback is retained only when supplied or authorized, with evidence and disagreement preserved.
+
+Development plans: [observed demonstration](validation/observed-demo-plan.md), [human-grounded evaluation](validation/human-grounded-plan.md), and [task-selection contract review](validation/task-selection-review.md). Fixture and major benchmark execution remain paused.
+
 Longshot reviews the meaning of evidence as well as report structure. Renamed controls can retain finding IDs; uncertain matches and split/merge history stay explicit. Resolution requires comparable evidence for the original obstacle, acceptance condition and behavior worth preserving. Screenshot and accessibility-tree evidence cannot establish untested keyboard, screen-reader or persistence behavior.
 
 Markdown and optional JSON must preserve the same assistance, provenance, uncertainty and recommendation safeguards, including blocked and zero-finding reports. The [continuity guide](skills/longshot-human-centered-ui/references/report-continuity.md) provides the decision rules; [14 authored review cases](validation/semantic-review.md) illustrate them. Schema 1.0.0 remains compatible. These cases are not executed browser tests or measured reliability results; major tests remain paused.

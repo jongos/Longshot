@@ -6,6 +6,8 @@ For a narrow review, combine the finding fields into one short paragraph rather 
 
 ## Opening
 
+- Review mode and task selection: automatic by default or user-guided; supplied roles/workflows and priorities, inferred gaps and why these journeys matter. Keep this compact.
+
 - Disposition: what can/cannot be concluded about the tested journey; mention blockers directly.
 - Scope and coverage: intended users/goals, environment/version, authorized data/actions, paths and states attempted, viewport/input method where known.
 - Execution and cause: completed, blocked or untested branches; distinguish product behavior from tool/environment limitations or unknown causes. A blocked review can coexist with correct product behavior.
@@ -34,6 +36,9 @@ Explain uncertain matches and split/merge relationships without dropping old IDs
 - **Confidence:** high / medium / low, justified by reproducibility, coverage and competing explanations. Confidence is separate from severity.
 - **Recommendation:** smallest change addressing the evidenced obstacle while preserving useful functionality; identify tradeoffs and a result that would contradict the expected benefit. Distinguish a proposed challenge to a requirement from violating that requirement. Keep unknown implementation causes explicit. No implementation is authorized by this field.
 - **Acceptance test:** given preconditions, when an action occurs, then an observable result should hold; include relevant recovery or negative paths. Avoid "make it intuitive" or invented performance thresholds.
+
+- **Costly success / decision information, when relevant:** cue, workaround or extra inference, result, unresolved consequence information and evidence. Successful completion alone does not settle clarity.
+- **Reviewed feedback, when supplied:** disposition, reviewer/source, reason and evidence; separate judgment of the obstacle from judgment of the remedy and from verified resolution.
 
 ## Improvement plan
 

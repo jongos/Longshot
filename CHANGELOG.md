@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-24 - Automatic Tasks and Guided Workflows
+
+**Changed:** Automatic task selection is the default; optional user roles, workflows and partial guidance define guided scope. Added costly-success and decision-information checks, recommendation assessment and authorized adjudication feedback.
+
+**Added:** A bounded observed-demo plan, benchmark qualification/scoring gates and ten authored task-selection cases. Updated usage documentation and landing copy.
+
+**Validation:** Focused structural checks and manual contract review; no fixture execution or major benchmark. Schema 1.0.0 and consumer dependencies are unchanged.
+
 ## 2026-10-24 - Focused Marketing Copy
 
 **Changed:** Removed repeated maturity labels and research disclaimers from the README and landing page. Kept purpose, uses, companion roles and operational instructions. Existing follow-up-review explanations remain intact.

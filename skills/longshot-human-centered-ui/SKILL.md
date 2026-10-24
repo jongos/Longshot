@@ -15,6 +15,10 @@ Dazzler creates and refines designed outputs; Style Science expresses design req
 
 ## Establish the task and boundary
 
+**Automatic mode is the default.** Given an interface and authorized access, infer its purpose and select a small set of important journeys using the protocol below. Briefly state the selected roles, goals and assumptions, then proceed without requiring a questionnaire or test-plan approval. Ask only when missing information materially changes safe access or the meaning of success. Automatic selection does not expand action permissions.
+
+**Guided mode is optional.** When the user supplies roles, workflows, priorities or success criteria, use them as the review scope. Accept partial guidance: infer only the missing pieces and label them. Roles describe permissions, domain knowledge and responsibilities, not fabricated personalities. A supplied role does not grant its account permissions. Keep user-defined workflows distinct from additional suggested coverage; do not silently replace them. If the user gives exact steps, test those steps as requested and label discovery as guided rather than claiming an independent first encounter.
+
 Infer intended users, goals, primary journey, optional branches, experience levels, constraints and review environment from supplied context. Ask only for material gaps. Keep a narrow request narrow; do not expand it into a full audit. Use existing browser or application testing capabilities rather than inventing a testing framework.
 
 A goal, an interface and authorized access are enough to start; do not require a persona questionnaire or a prepared test plan. Infer a small task-relevant set of conditions. Use concrete constraints (first visit, return to a draft, compare options, keyboard-only, narrow viewport/zoom, interrupted work or incomplete information), not demographic roleplay. These conditions expand coverage; they do not simulate a population or establish its abilities, feelings or preferences.
@@ -59,6 +63,8 @@ Use [research guidance](references/research.md) when interpreting findings; reta
 For capability coverage, evidence bundles, comparison with prior runs or requested machine-readable output, use [report continuity and exports](references/report-continuity.md). Record host availability separately from checks attempted and verified. Keep stable finding identities across comparable runs; absence from a later report never establishes a fix. JSON export is optional, uses the bundled versioned schema, and adds no runtime or service dependency. Preserve uncertainty, provenance and privacy in every format.
 
 Before delivery, check that evidence supports each coverage and resolution claim, not merely that its reference exists. When exporting JSON, reconcile its meaning with the readable report using the continuity guide; preserve blocked states, assistance and uncertainty even when no findings are emitted.
+
+Report successful completion that depended on substantial inference, backtracking or a workaround, and missing information at consequential decisions. Distinguish the observed burden from an estimate of human difficulty. Assess the recommendation separately from the finding; when the cause is unresolved, propose a discriminating check instead of an unsupported redesign.
 
 Scale to the request using the [finding template](references/finding-template.md). Lead with whether the task was completed and what assistance was needed, then consequential obstacles, working behavior to preserve, next improvements and unresolved evidence. Prioritize blocked tasks, lost work, unintended charges and misleading outcomes above cosmetics. Do not hide critical problems behind an average score.
 

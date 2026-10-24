@@ -4,7 +4,7 @@
 
 **Make the Interface Prove It.**
 
-Give Longshot a task and an interface. It follows the journey, checks the result and reports what works, what gets in the way and how to verify a fix.
+Give Longshot an interface. It selects important tasks, follows the journeys and reports what works, what gets in the way and how to verify a fix. Want to direct the review? Supply your user roles and workflows.
 
 ## Put It to Work
 
@@ -19,15 +19,21 @@ On follow-up reviews, Longshot retests the original problem and tracks resolved,
 
 ## Give It a Goal
 
+**Automatic by default:** Longshot chooses relevant journeys from the interface and context. **Guided when you want:** define roles, workflows, priorities or success criteria. Provide as much or as little direction as you need.
+
 ```sh
 npx skills add jongos/Longshot --skill longshot-human-centered-ui
 ```
 
 ```text
-Use $longshot-human-centered-ui to test this demo. Prepare a draft,
-open its required reference, then return and finish. Use the supplied
-test account. Report reproducible obstacles without modifying the app.
+Use $longshot-human-centered-ui to test this app using the supplied
+test account. Choose the important workflows and report obstacles.
+Do not modify the app.
 ```
+
+For a guided review: “Test the editor role creating and resuming drafts, and the reviewer role approving or returning them. Prioritize preserving work. Use the supplied test accounts; skip administration.”
+
+Longshot also checks successful journeys for hidden workarounds and whether important decisions explain their consequences. Recommendations connect the observed obstacle to a specific change and a way to check whether it helped.
 
 Use a compatible agent with authorized browser or application access. [Read the skill](skills/longshot-human-centered-ui/SKILL.md) for the review method and [setup details](REFERENCE.md#install-and-invoke) for alternatives.
 
