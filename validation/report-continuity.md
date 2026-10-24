@@ -1,5 +1,11 @@
 # Report Continuity Validation
 
+## Issue #3 follow-up — 2026-10-24
+
+Added [14 authored semantic decision cases](semantic-review.md) covering identity, retest relevance, channel-specific coverage and Markdown/JSON meaning. Updated the guide and report template to require evidence-content review, preserve uncertain matches and split/merge history, and reconcile both formats. Kept schema 1.0.0 and consumer requirements unchanged. These are specification examples, not independent behavioral evaluation. Major tests remain paused.
+
+Focused checks rerun successfully: both full JSON examples and existing negative/reference checks; skill frontmatter/scaffold validation; whitespace diff check. Manual contract review covered all 14 cases and their paired representation excerpts. The saved-draft evidence remains insufficient for resolution even though a deliberately altered candidate passes schema structure. No model trial, browser walkthrough, human study or landing-page visual/accessibility evaluation was performed. The examples document expected decisions, not measured agent adherence.
+
 Date: 2026-10-23. Major tests remain paused. No real application, human study, competitor trial or large benchmark was run.
 
 Added optional schema 1.0.0, report-continuity guidance, capability/coverage distinctions and a complete authored synthetic evidence bundle. The sample includes a working control and an intentionally incomparable follow-up; LS-001 remains untested, not resolved. No screenshots or participant results were fabricated.

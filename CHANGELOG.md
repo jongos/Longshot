@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-24 - Evidence-Supported Follow-Ups
+
+**Changed:** Finding matching, retest status, capability claims and Markdown/JSON consistency now include explicit evidence-content checks. Updated skill, template, reference, README and landing copy.
+
+**Added:** Fourteen authored semantic cases, including irrelevant resolution evidence, uncertain identity, blocked reviews and clean controls.
+
+**Why:** Prevent valid report formatting from being mistaken for supported conclusions. Preserve schema 1.0.0 compatibility and optional exports.
+
+**Validation:** Existing schema/example/reference checks, skill validation and whitespace checks passed. Manual review of authored decision cases; no live application tests, human study or major benchmark. Major tests remain paused.
+
 ## 2026-10-24 - Project Overviews and Companion Roles
 
 **Changed:** README and landing-page copy lead with purpose, concrete uses and the distinct roles of the related projects. Existing visual designs and canonical skill behavior are preserved.

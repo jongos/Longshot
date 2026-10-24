@@ -15,6 +15,8 @@ Longshot is an independent interface-testing skill. Give it a realistic task and
 
 The deliverable connects each finding to its starting state, actions, observed result and a concrete acceptance test. Longshot can report no findings when the evidence supports that conclusion.
 
+On follow-up reviews, Longshot keeps finding history and checks the original problem before calling it resolved. Reports preserve what remains uncertain, so an unrelated success or an untested path cannot quietly become a claimed fix. [See how comparisons work](skills/longshot-human-centered-ui/references/report-continuity.md).
+
 ## Give It a Goal
 
 ```sh

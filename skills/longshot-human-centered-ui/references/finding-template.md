@@ -20,6 +20,8 @@ For a narrow review, combine the finding fields into one short paragraph rather 
 
 Preserve the ID when a prior finding matches; cite the prior run, changed conditions and current status. Keep original observations intact. For a comparison, include blocked and untested prior findings as well as reproduced findings; omission is not resolution.
 
+Explain uncertain matches and split/merge relationships without dropping old IDs. A resolution requires relevant evidence for the original obstacle, acceptance test and preserved behavior; use the continuity guide's meaning check before delivering Markdown and JSON together.
+
 - **Task/state:** goal, preconditions, route and relevant input.
 - **Evidence:** reproducible action sequence and actual result, with an artifact locator or screenshot caption when available. Identify supplied versus directly observed evidence and simulation.
 - **Replay context:** sanitized inputs, application/build when known, starting state, viewport/zoom/input method, action and artifact references, terminal verification and safe reset instructions where relevant. Missing details remain explicit.
