@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-24 - Focused Marketing Copy
+
+**Changed:** Removed repeated maturity labels and research disclaimers from the README and landing page. Kept purpose, uses, companion roles and operational instructions. Existing follow-up-review explanations remain intact.
+
+**Added:** None.
+
+**Why:** Keep project introductions focused on the work people can do.
+
+**Validation:** Marketing phrase and local-link checks passed; desktop/mobile layout checked. Canonical skills, research references and repository visibility are unchanged. This is a copy-only update, not release certification.
+
 ## 2026-10-24 - Evidence-Supported Follow-Ups
 
 **Changed:** Finding matching, retest status, capability claims and Markdown/JSON consistency now include explicit evidence-content checks. Updated skill, template, reference, README and landing copy.
