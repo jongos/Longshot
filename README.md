@@ -19,6 +19,8 @@ On follow-up reviews, Longshot retests the original problem and tracks resolved,
 
 ## Give It a Goal
 
+[Guide a review](GUIDANCE.md): examples for roles, workflows, priorities and success criteria, from a single sentence to a complete brief.
+
 **Automatic by default:** Longshot chooses relevant journeys from the interface and context. **Guided when you want:** define roles, workflows, priorities or success criteria. Provide as much or as little direction as you need.
 
 ```sh

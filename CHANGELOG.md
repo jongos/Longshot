@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-24 - Guide a Review
+
+Added a practical guidance guide and landing-page field guide: automatic start, four optional inputs, partial guidance, role handoffs, observable success criteria and a complete reusable brief. Dazzler shaped the existing visual system, Mojo the copy, Spiral the handoff example and Shatterstar the optional, progressively disclosed structure.
+
 ## 2026-10-24 - Automatic Tasks and Guided Workflows
 
 **Changed:** Automatic task selection is the default; optional user roles, workflows and partial guidance define guided scope. Added costly-success and decision-information checks, recommendation assessment and authorized adjudication feedback.
