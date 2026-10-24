@@ -4,7 +4,7 @@
 
 **Make the Interface Prove It.**
 
-Longshot is an independent interface-testing skill. Give it a realistic task and an interface to use. It attempts the journey, checks the result and returns obstacles you can reproduce, supported strengths and recommendations you can verify.
+Give Longshot a task and an interface. It follows the journey, checks the result and reports what works, what gets in the way and how to verify a fix.
 
 ## Put It to Work
 
@@ -13,9 +13,9 @@ Longshot is an independent interface-testing skill. Give it a realistic task and
 - **When “done” is unclear:** distinguish a success message from a result that can actually be found and used.
 - **Beyond the default path:** examine relevant keyboard, zoom and narrow-screen conditions.
 
-The deliverable connects each finding to its starting state, actions, observed result and a concrete acceptance test. Longshot can report no findings when the evidence supports that conclusion.
+Each finding includes the starting state, actions, observed result and an acceptance test.
 
-On follow-up reviews, Longshot keeps finding history and checks the original problem before calling it resolved. Reports preserve what remains uncertain, so an unrelated success or an untested path cannot quietly become a claimed fix. [See how comparisons work](skills/longshot-human-centered-ui/references/report-continuity.md).
+On follow-up reviews, Longshot retests the original problem and tracks resolved, recurring and untested findings. [See how comparisons work](skills/longshot-human-centered-ui/references/report-continuity.md).
 
 ## Give It a Goal
 
@@ -37,12 +37,13 @@ Use a compatible agent with authorized browser or application access. [Read the 
 
 | Project | How It Complements This Work |
 |---|---|
-| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine expressive interfaces, documents and visual stories. |
-| [Style Science](https://github.com/jongos/style-science) | Make design requirements, constraints and evidence inspectable. |
-| [Spiral](https://github.com/jongos/Spiral) | Trace multi-person workflows, handoffs and waiting states before building. |
-| [Shatterstar](https://github.com/jongos/Shatterstar) | Evaluate what to remove, combine, hide or defer while preserving important tasks. |
+| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine interfaces, documents and slides. |
+| [Style Science](https://github.com/jongos/style-science) | Connect design requirements to measurable checks and evidence. |
+| [Spiral](https://github.com/jongos/Spiral) | Find gaps in workflow handoffs, ownership and recovery. |
+| [Shatterstar](https://github.com/jongos/Shatterstar) | Simplify products while preserving important tasks. |
+| [Mojo](https://github.com/jongos/Mojo) | Make AI outputs clear and direct. |
 
-[Hex Men](https://github.com/jongos/Hex-Men) brings the collection together. Choose the project your question needs; there is no required sequence.
+[Explore Hex Men](https://github.com/jongos/Hex-Men) for tools that complement your task.
 
 ## Further Reading
 
