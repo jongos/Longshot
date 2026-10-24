@@ -2,33 +2,13 @@
 
 [Return to the project overview](README.md). Setup, research and supporting detail are retained below.
 
-![Longshot — Make the Interface Prove It. Independent interface testing: attempt, observe, challenge, verify.](docs/longshot-readme.svg)
+![Longshot — UI/UX Testing for Agents. Independent interface testing: attempt, observe, challenge, verify.](docs/longshot-readme.svg)
 
 # Longshot
 
-## Evidence-supported follow-ups
-
-### Workflow Friction
-
-The walkthrough uses four optional lenses: choice visibility, action scope, context continuity and translation burden. Each connects a visible obstacle to a task, a recommendation and an acceptance test. Below-the-fold options, necessary prerequisites and useful technical terminology are not automatically defects. Preserve justified consent, replacement warnings and truthful service status.
-
-See the [attributed scene-creation case study](examples/scene-creation-case-study.md) for the supplied feedback and a proposed review example. The original review artifacts are not bundled; the reported 21 recommendations are not a performance score.
-
-### Automatic and guided reviews
-
-Automatic mode selects a small set of important tasks from authorized context, weighing the core job, consequences, interruptions and recovery. Supplied roles/workflows activate guided scope; partial guidance is enough. Exact supplied steps are tested as a guided route. User-defined roles never grant account permissions. Task origin, assumptions and important exclusions stay visible in the report.
-
-The [walkthrough](skills/longshot-human-centered-ui/references/walkthrough-protocol.md) adds costly-success and decision-information checks, separate assessment of recommendations, and optional use of reviewed finding feedback. Feedback is retained only when supplied or authorized, with evidence and disagreement preserved.
-
-Development plans: [observed demonstration](validation/observed-demo-plan.md), [human-grounded evaluation](validation/human-grounded-plan.md), and [task-selection contract review](validation/task-selection-review.md). Fixture and major benchmark execution remain paused.
-
-Longshot reviews the meaning of evidence as well as report structure. Renamed controls can retain finding IDs; uncertain matches and split/merge history stay explicit. Resolution requires comparable evidence for the original obstacle, acceptance condition and behavior worth preserving. Screenshot and accessibility-tree evidence cannot establish untested keyboard, screen-reader or persistence behavior.
-
-Markdown and optional JSON must preserve the same assistance, provenance, uncertainty and recommendation safeguards, including blocked and zero-finding reports. The [continuity guide](skills/longshot-human-centered-ui/references/report-continuity.md) provides the decision rules; [14 authored review cases](validation/semantic-review.md) illustrate them. Schema 1.0.0 remains compatible. These cases are not executed browser tests or measured reliability results; major tests remain paused.
-
 **An independent agent skill for testing human-facing interfaces.** Longshot attempts realistic tasks, challenges design assumptions, and returns reproducible findings with recommendations you can verify.
 
-[Visit the Website](https://jongos.github.io/Longshot/) · [Read the Skill](skills/longshot-human-centered-ui/SKILL.md) · [Validation](validation/rename-independent-role.md) · [Report an Issue](https://github.com/jongos/Longshot/issues)
+[Visit the Website](https://jongos.github.io/Longshot/) · [Read the Skill](skills/longshot-human-centered-ui/SKILL.md) · [Validation](validation/README.md) · [Report an Issue](https://github.com/jongos/Longshot/issues)
 
 > **Your design has a point of view. Give it a second pair of eyes.**
 >
@@ -168,6 +148,26 @@ That makes the companion name a personal comics connection as well as a useful m
 
 Sources: [Marvel's Longshot collection](https://www.marvel.com/comics/collection/46821/x-men_longshot_new_printing_trade_paperback), [character history and issue references](https://en.wikipedia.org/wiki/Longshot_(Marvel_Comics)). Independent project; not affiliated with or endorsed by Marvel or Disney. No Marvel artwork is included.
 
+## Evidence-supported follow-ups
+
+### Workflow Friction
+
+The walkthrough uses four optional lenses: choice visibility, action scope, context continuity and translation burden. Each connects a visible obstacle to a task, a recommendation and an acceptance test. Below-the-fold options, necessary prerequisites and useful technical terminology are not automatically defects. Preserve justified consent, replacement warnings and truthful service status.
+
+See the [attributed scene-creation case study](examples/scene-creation-case-study.md) for the supplied feedback and a proposed review example. The original review artifacts are not bundled; the reported 21 recommendations are not a performance score.
+
+### Automatic and guided reviews
+
+Automatic mode selects a small set of important tasks from authorized context, weighing the core job, consequences, interruptions and recovery. Supplied roles/workflows activate guided scope; partial guidance is enough. Exact supplied steps are tested as a guided route. User-defined roles never grant account permissions. Task origin, assumptions and important exclusions stay visible in the report.
+
+The [walkthrough](skills/longshot-human-centered-ui/references/walkthrough-protocol.md) adds costly-success and decision-information checks, separate assessment of recommendations, and optional use of reviewed finding feedback. Feedback is retained only when supplied or authorized, with evidence and disagreement preserved.
+
+Development plans: [observed demonstration](validation/observed-demo-plan.md), [human-grounded evaluation](validation/human-grounded-plan.md), and [task-selection contract review](validation/task-selection-review.md). Fixture and major benchmark execution remain paused.
+
+Longshot reviews the meaning of evidence as well as report structure. Renamed controls can retain finding IDs; uncertain matches and split/merge history stay explicit. Resolution requires comparable evidence for the original obstacle, acceptance condition and behavior worth preserving. Screenshot and accessibility-tree evidence cannot establish untested keyboard, screen-reader or persistence behavior.
+
+Markdown and optional JSON must preserve the same assistance, provenance, uncertainty and recommendation safeguards, including blocked and zero-finding reports. The [continuity guide](skills/longshot-human-centered-ui/references/report-continuity.md) provides the decision rules; [14 authored review cases](validation/semantic-review.md) illustrate them. Schema 1.0.0 remains compatible. These cases are not executed browser tests or measured reliability results; major tests remain paused.
+
 ## Validation and Limits
 
 The [bounded recommendation cycle](validation/recommendation-cycle-2026-10-24/RESULTS.md) compared 24 development reports and eight fresh-case reports. It supported a narrow clarification of preservation checks and the difference between a displayed shortcut and an exercised one. Most evaluator comparisons tied; this is not a broad quality-score or human-performance gain. Only this cycle was unpaused; major benchmarks remain paused.
@@ -181,6 +181,8 @@ Agent observations are not human participant evidence. Longshot cannot infer hum
 Review permission does not authorize private-content inspection, paid actions, production changes or deployment. Application changes require separate authorization.
 
 ## Contributing
+
+See [Run the checks](validation/README.md#run-the-checks) for the development environment and automated validation.
 
 Useful issues include a sanitized task, environment, reproduction steps, observed behavior and expected outcome. Mark simulated service behavior explicitly. Avoid private data, credentials and invented participant results. Include good control cases as well as failures; a new instruction should solve a demonstrated problem without expanding every review into an audit.
 

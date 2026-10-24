@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-24 - Public Links and Reproducible Validation
+
+**Changed:** #4 replaces private companion destinations with plain-text availability labels. #5 requires nonempty finding steps, with truthful static-inspection guidance and empty/blank-step negative checks. Existing schema 1.0.0 exports with empty steps now fail validation. #6 adds a validation index; #7 moves development follow-ups below user guidance; #8 documents isolated setup, pins a development dependency and adds push/PR CI.
+
+**Validation:** Focused schema/example, local-link and page-layout checks only. No major benchmark, fixture study or paid evaluation; #1/#2 remain research-only. The skill has no new runtime dependency.
+
+
 ## 2026-10-24 - Bounded Recommendation Improvement Cycle
 
 **Changed:** Made preservation acceptance checks concrete and task-scoped; distinguished visible shortcut promises from exercised behavior. Updated the report template, README, reference and landing copy. No new consumer dependency or required report field.

@@ -1,0 +1,2 @@
+# Development validation only; not required to install or use Longshot.
+jsonschema==4.26.0

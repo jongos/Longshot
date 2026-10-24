@@ -50,10 +50,14 @@ for name in ('acceptance_check', 'original_obstacle_check', 'preserved_behavior_
     c[name] = {'result': 'passed', 'evidence_ids': ['E-003'], 'detail': 'Structural test only; not an actual resolved finding.'}
 validator.validate(good)  # Schema cannot prove evidence relevance; this is not published as a result.
 bad = copy.deepcopy(good); bad['comparisons'][0]['preserved_behavior_check']['evidence_ids'] = []; rejected(bad)
+inspection = copy.deepcopy(runs[0]); inspection['findings'][0]['steps'] = ['Inspect the supplied screenshot identified by the evidence locator; no browser action was performed.']
+validator.validate(inspection)  # Structural inspection-step control, not new observed evidence.
+bad = copy.deepcopy(runs[0]); bad['findings'][0]['steps'] = []; rejected(bad)
+bad = copy.deepcopy(runs[0]); bad['findings'][0]['steps'] = ['']; rejected(bad)
 bad = copy.deepcopy(runs[0]); bad['schema_version'] = '2.0.0'; rejected(bad)
 bad = copy.deepcopy(runs[0]); bad['capabilities'][0]['coverage'] = 'available'; rejected(bad)
 bad = copy.deepcopy(runs[0]); bad['findings'][0]['evidence_ids'] = ['missing']
 try: references(bad)
 except AssertionError: pass
 else: raise AssertionError('dangling reference accepted')
-print('PASS: two examples, artifact/reference integrity, prior-finding coverage, resolution evidence gates, version and coverage negatives.')
+print('PASS: two examples, artifact/reference integrity, prior-finding coverage, resolution evidence gates, empty/blank reproduction steps, version and coverage negatives.')
