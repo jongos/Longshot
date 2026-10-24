@@ -1,0 +1,110 @@
+{
+  "q1_D1": {
+    "candidate": "scope",
+    "case": "D1",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q1_D2": {
+    "candidate": "scope",
+    "case": "D2",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q1_D3": {
+    "candidate": "scope",
+    "case": "D3",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q1_D4": {
+    "candidate": "scope",
+    "case": "D4",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q1_D5": {
+    "candidate": "scope",
+    "case": "D5",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q1_D6": {
+    "candidate": "scope",
+    "case": "D6",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q2_D1": {
+    "candidate": "cause",
+    "case": "D1",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q2_D2": {
+    "candidate": "cause",
+    "case": "D2",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q2_D3": {
+    "candidate": "cause",
+    "case": "D3",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q2_D4": {
+    "candidate": "cause",
+    "case": "D4",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q2_D5": {
+    "candidate": "cause",
+    "case": "D5",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q2_D6": {
+    "candidate": "cause",
+    "case": "D6",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q3_D1": {
+    "candidate": "preservation",
+    "case": "D1",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q3_D2": {
+    "candidate": "preservation",
+    "case": "D2",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q3_D3": {
+    "candidate": "preservation",
+    "case": "D3",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q3_D4": {
+    "candidate": "preservation",
+    "case": "D4",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q3_D5": {
+    "candidate": "preservation",
+    "case": "D5",
+    "a": "candidate",
+    "b": "baseline"
+  },
+  "q3_D6": {
+    "candidate": "preservation",
+    "case": "D6",
+    "a": "candidate",
+    "b": "baseline"
+  }
+}

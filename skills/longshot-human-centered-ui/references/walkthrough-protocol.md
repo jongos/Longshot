@@ -68,6 +68,10 @@ Evaluate detection and remedy separately. Explain the causal link between the pr
 
 Choose the smallest change addressing the observed obstacle. State useful behavior to preserve, a tradeoff and a falsifiable acceptance test. Compare a plausible alternative when the choice is consequential; do not produce alternatives just to fill space. A required safeguard is not needless friction merely because it adds a step. A proposed simplification must be assessed separately from whether the existing implementation meets its contract.
 
+Make preservation concrete when the recommendation could affect evidenced behavior: pair the obstacle check with an applicable check of what must remain working. For example, adding seconds beside a frame field should retain direct entry of valid integer frame counts, not merely reproduce one example duration. Keep this within the task and supplied constraints; an adjacent check is not permission to invent a product requirement or expand the audit.
+
+Distinguish a visible promise from exercised behavior when choosing these checks. A displayed keyboard shortcut is evidence of its label, not evidence that the shortcut works; list shortcut execution as proposed or untested until actually exercised. Retain already verified behavior, such as the tested button's focus return, instead of replacing its acceptance check with speculative coverage.
+
 When a later fix-and-retest is authorized, repeat comparable task conditions and check an adjacent preserved behavior. Report whether the observed obstacle disappeared and whether a regression appeared. This supports a finding about the tested behavior, not a claim that humans became faster or more satisfied.
 
 ## Learn From Reviewed Findings

@@ -170,6 +170,8 @@ Sources: [Marvel's Longshot collection](https://www.marvel.com/comics/collection
 
 ## Validation and Limits
 
+The [bounded recommendation cycle](validation/recommendation-cycle-2026-10-24/RESULTS.md) compared 24 development reports and eight fresh-case reports. It supported a narrow clarification of preservation checks and the difference between a displayed shortcut and an exercised one. Most evaluator comparisons tied; this is not a broad quality-score or human-performance gain. Only this cycle was unpaused; major benchmarks remain paused.
+
 Current validation includes structural checks and small synthetic text-packet exercises. The [original record](validation/RESULTS.md) and [rename/independent-role check](validation/rename-independent-role.md) state exactly what ran. They do not establish broad reliability on rendered applications.
 
 The [walkthrough protocol update](validation/walkthrough-protocol.md) records the limited checks for first-encounter isolation, evidence provenance and recommendation safeguards. Human-grounded benchmark research is planned; a held-out human comparison has not been run. The [evaluation plan](validation/human-grounded-plan.md) defines what would count as stronger evidence without presenting future tests as completed work.

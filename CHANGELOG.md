@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-24 - Bounded Recommendation Improvement Cycle
+
+**Changed:** Made preservation acceptance checks concrete and task-scoped; distinguished visible shortcut promises from exercised behavior. Updated the report template, README, reference and landing copy. No new consumer dependency or required report field.
+
+**Evidence:** 24 synthetic development reports, eight fresh reports, four development-only evaluator batches (44 pair judgments) and independent evidence adjudication. Most comparisons tied; broader scope/cause instructions were not adopted. The final edit retains only supported parts of the preservation candidate, not the entire tested instruction.
+
+**Validation:** See the [cycle record](validation/recommendation-cycle-2026-10-24/RESULTS.md) for exact results, disagreements and limits. No human study or rendered-application benchmark ran; broader tests remain paused.
+
+
 ## 2026-10-24 - Workflow Friction Lenses
 
 **Changed:** Added optional choice-visibility, action-scope, context-continuity and translation-burden checks to the walkthrough, routed from the skill entrypoint. Retained automatic/guided scope and working safeguards.

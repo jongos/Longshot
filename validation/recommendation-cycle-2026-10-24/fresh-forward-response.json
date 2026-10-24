@@ -1,0 +1,58 @@
+{
+  "model": "jev-1.14.0",
+  "answers": {
+    "q1_F1": {
+      "type": "choice",
+      "choice": "b",
+      "confidence": 0.41,
+      "probabilities": {
+        "a": 0.05,
+        "b": 0.5599999999999999,
+        "tie": 0.38,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q1_F2": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.56,
+      "probabilities": {
+        "a": 0.12,
+        "b": 0.21,
+        "tie": 0.67,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q1_F3": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.6,
+      "probabilities": {
+        "a": 0.18,
+        "b": 0.12,
+        "tie": 0.7,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q1_F4": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.83,
+      "probabilities": {
+        "a": 0.06,
+        "b": 0.07,
+        "tie": 0.87,
+        "neither": 0
+      },
+      "stats": {}
+    }
+  },
+  "usage": {
+    "input_tokens": 3065,
+    "output_tokens": 187
+  },
+  "evaluation_time_ms": 32.776716
+}

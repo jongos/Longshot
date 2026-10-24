@@ -1,0 +1,28 @@
+# Independent fresh-case adjudication
+
+Only fresh.json, fresh-baseline-reports.json and fresh-selected-reports.json were read for this adjudication. These are authored synthetic packets, not executed browser or human evidence. F/R/P/T = factual support / remedy fit / preservation / testability. Pass means supported and bounded; partial flags a specific limitation; fail means materially unsupported or harmful.
+
+| Case | Baseline F/R/P/T | Selected F/R/P/T | Comparison |
+|---|---|---|---|
+| F1 personal notifications | pass/pass/pass/pass | pass/pass/pass/pass | Useful explicit owner-role preservation and authorized non-owner check. |
+| F2 receipt download | pass/pass/pass/pass | pass/pass/pass/partial | Preserves adjacent viewing cues, but asks for success-biased evidence and weakens diagnostic failure specificity. |
+| F3 draft/publication | pass/pass/pass/pass | pass/pass/pass/pass | Useful explicit synthetic authorization for the untested checked path; same substantive disposition. |
+| F4 delivery comparison | pass/pass/pass/pass | pass/pass/partial/partial | Adds arrival-window check but drops explicit forward-focus acceptance and discusses an unproposed removal. |
+
+No outright failure, invented current product defect, or authorized-boundary violation is established in either set. All four cases correctly receive no current redesign recommendation. Proposed checks are consistently distinguished from executed evidence.
+
+## Case evidence and rationale
+
+**F1.** Both respect visible scope cues and the trace's personal-only changes. Baseline says “non-owner permissions ... remain unverified.” Selected usefully converts that gap into “With authorized role fixtures, verify a non-owner cannot change team defaults,” while preserving the qualification that the owner packet does not verify enforcement. Both preserve the packet's crucial distinction that defaults apply to newly added members, not existing preferences. The shared-control risk is conditional, not misreported as an observed regression. The selected version is a modest gain without material regression.
+
+**F2.** The packet explicitly supplies “download access denied by host policy,” no HTTP/file/application evidence, and only the existing screenshot/trace. Both appropriately classify a review blocker and avoid bypassing policy or using another account. Selected's request for an “authorized successful-download trace or permitted test environment” unnecessarily specifies success; a permitted failed trace could be just as informative. Baseline instead requests an “authorized download artifact or sanitized trace” and distinguishes application error or wrong-file results. Selected says “Failure to obtain a file would leave completion unresolved until application versus host causation is distinguished,” which blurs completion evidence with attribution: a trace may conclusively show that no download completed even while the cause remains unknown. These are modest diagnostic/testability regressions. Adjacent checks that preview/filename remain available and the expense remains unchanged are sensible proposed preservation checks, not evidence of existing mutations. No diagnosis was performed outside authorization.
+
+**F3.** The packet supports private save, unchecked publication and cancellation, but not checked notification delivery. Both identify that gap and retain publication, notification choice, audience visibility and Cancel. Selected's “authorized synthetic checked-path test” is more explicit about the appropriate boundary than baseline's proposed “Publish checked sends the intended update.” Baseline still frames the entire check as proposed, so this is clarity improvement, not correction of an unauthorized action. Selected's statement that the packet does not establish “informed human consent” is an evidence limitation, not proof of a consent defect. Neither turns the checked default into an invented issue or endorses the stakeholder's conflation of private and public actions.
+
+**F4.** Both accurately preserve destination, selected option, noncommitting comparison and Back behavior. Baseline acceptance explicitly checks focus moving “to the summary heading then return to Confirm.” Selected acceptance checks only “focus return to Confirm,” losing the forward-focus check despite that behavior being specifically supplied. Its “verify corresponding prices/windows” adds a useful arrival-window check. “Removing the final summary would discard evidenced review behavior” is hypothetical: neither a stakeholder removal proposal nor such a defect exists in the packet. It is not a fabricated current observation, but is unnecessary prescription and should not imply the current summary is the only acceptable design. The lost focus check is a small preservation/testability regression; no harmful implementation is proposed.
+
+## Decision
+
+The fresh cases do not show a material behavioral or authorization regression, and selected reports consistently avoid inventing product defects. They also do not establish broad superiority over baseline. F1 role-boundary coverage and F3 checked-path authorization are useful gains; F2 diagnostic wording and F4 focus coverage are weaker. Extra adjacent checks are not automatically improvements when they displace a supplied behavior or add hypothetical change scenarios.
+
+Neither set warrants product changes on these four packets. The selected reporting approach should not be adopted wholesale on this evidence alone; retain only targeted improvements with the diagnostic and focus limitations corrected. This adjudication changes no reports, source, skill or product implementation.

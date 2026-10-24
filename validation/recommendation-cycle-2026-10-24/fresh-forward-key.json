@@ -1,0 +1,26 @@
+{
+  "q1_F1": {
+    "candidate": "fresh-selected",
+    "case": "F1",
+    "a": "baseline",
+    "b": "candidate"
+  },
+  "q1_F2": {
+    "candidate": "fresh-selected",
+    "case": "F2",
+    "a": "baseline",
+    "b": "candidate"
+  },
+  "q1_F3": {
+    "candidate": "fresh-selected",
+    "case": "F3",
+    "a": "baseline",
+    "b": "candidate"
+  },
+  "q1_F4": {
+    "candidate": "fresh-selected",
+    "case": "F4",
+    "a": "baseline",
+    "b": "candidate"
+  }
+}

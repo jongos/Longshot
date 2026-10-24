@@ -41,7 +41,7 @@ Do not modify the app.
 
 For a guided review: “Test the editor role creating and resuming drafts, and the reviewer role approving or returning them. Prioritize preserving work. Use the supplied test accounts; skip administration.”
 
-Longshot also checks successful journeys for hidden workarounds and whether important decisions explain their consequences. Recommendations connect the observed obstacle to a specific change and a way to check whether it helped.
+Longshot also checks successful journeys for hidden workarounds and whether important decisions explain their consequences. Recommendations connect the observed obstacle to a specific change, a check that it helped, and a check that useful behavior still works. A displayed shortcut is not reported as tested until it has been exercised.
 
 Use a compatible agent with authorized browser or application access. [Read the skill](skills/longshot-human-centered-ui/SKILL.md) for the review method and [setup details](REFERENCE.md#install-and-invoke) for alternatives.
 

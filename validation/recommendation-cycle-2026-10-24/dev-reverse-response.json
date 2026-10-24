@@ -1,0 +1,226 @@
+{
+  "model": "jev-1.14.0",
+  "answers": {
+    "q1_D1": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.45,
+      "probabilities": {
+        "a": 0.24,
+        "b": 0.16,
+        "tie": 0.59,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q1_D2": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.64,
+      "probabilities": {
+        "a": 0.11,
+        "b": 0.16,
+        "tie": 0.73,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q1_D3": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.36,
+      "probabilities": {
+        "a": 0.37,
+        "b": 0.11,
+        "tie": 0.52,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q1_D4": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.45,
+      "probabilities": {
+        "a": 0.34,
+        "b": 0.07,
+        "tie": 0.59,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q1_D5": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.52,
+      "probabilities": {
+        "a": 0.13,
+        "b": 0.22,
+        "tie": 0.64,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q1_D6": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.53,
+      "probabilities": {
+        "a": 0.23,
+        "b": 0.11,
+        "tie": 0.65,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q2_D1": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.36,
+      "probabilities": {
+        "a": 0.04,
+        "b": 0.43,
+        "tie": 0.52,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q2_D2": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.69,
+      "probabilities": {
+        "a": 0.07,
+        "b": 0.16,
+        "tie": 0.77,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q2_D3": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.41,
+      "probabilities": {
+        "a": 0.16,
+        "b": 0.28,
+        "tie": 0.56,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q2_D4": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.57,
+      "probabilities": {
+        "a": 0.03,
+        "b": 0.29,
+        "tie": 0.68,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q2_D5": {
+      "type": "choice",
+      "choice": "b",
+      "confidence": 0.36,
+      "probabilities": {
+        "a": 0.06,
+        "b": 0.52,
+        "tie": 0.41,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q2_D6": {
+      "type": "choice",
+      "choice": "a",
+      "confidence": 0.27,
+      "probabilities": {
+        "a": 0.45,
+        "b": 0.26,
+        "tie": 0.23,
+        "neither": 0.06
+      },
+      "stats": {}
+    },
+    "q3_D1": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.51,
+      "probabilities": {
+        "a": 0.19,
+        "b": 0.15,
+        "tie": 0.63,
+        "neither": 0.03
+      },
+      "stats": {}
+    },
+    "q3_D2": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.81,
+      "probabilities": {
+        "a": 0.08,
+        "b": 0.06,
+        "tie": 0.86,
+        "neither": 0
+      },
+      "stats": {}
+    },
+    "q3_D3": {
+      "type": "choice",
+      "choice": "a",
+      "confidence": 0.21,
+      "probabilities": {
+        "a": 0.41,
+        "b": 0.18,
+        "tie": 0.39999999999999997,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q3_D4": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.27,
+      "probabilities": {
+        "a": 0.34,
+        "b": 0.2,
+        "tie": 0.45,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q3_D5": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.49,
+      "probabilities": {
+        "a": 0.24,
+        "b": 0.13,
+        "tie": 0.62,
+        "neither": 0.01
+      },
+      "stats": {}
+    },
+    "q3_D6": {
+      "type": "choice",
+      "choice": "tie",
+      "confidence": 0.75,
+      "probabilities": {
+        "a": 0.06,
+        "b": 0.13,
+        "tie": 0.81,
+        "neither": 0
+      },
+      "stats": {}
+    }
+  },
+  "usage": {
+    "input_tokens": 13324,
+    "output_tokens": 831
+  },
+  "evaluation_time_ms": 91.186357
+}
