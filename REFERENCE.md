@@ -188,4 +188,4 @@ Useful issues include a sanitized task, environment, reproduction steps, observe
 
 ## License
 
-Original skill instructions, documentation and website code: [MIT](LICENSE). Bundled Archivo font files retain their [SIL Open Font License](docs/fonts/archivo/OFL.txt) and notices. Character names and comics remain the property of their respective owners.
+Original skill instructions, documentation and website code: [Apache-2.0](LICENSE). Bundled Archivo font files retain their [SIL Open Font License](docs/fonts/archivo/OFL.txt) and notices. Character names and comics remain the property of their respective owners.

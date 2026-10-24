@@ -6,6 +6,22 @@
 
 Give Longshot an interface. It selects important tasks, follows the journeys and reports what works, what gets in the way and how to verify a fix. Want to direct the review? Supply your user roles and workflows.
 
+## The Problem
+
+An app can pass its technical tests and still be hard to use. A save button may save one thing while another save button saves something else. A choice may be buried under a big text box. A draft may be gone when you leave and come back.
+
+Someone has to try the task the way a person would.
+
+## What This Does About It
+
+Longshot is a skill: a folder of instructions you add to an AI agent. Give it an app or a website. It picks the important tasks and works through them step by step. Then it reports what works, what gets in the way and how to check a fix.
+
+Each problem comes with the starting point, the steps taken, what happened and a test that shows when it is fixed. You can tell it which kinds of users and tasks matter most.
+
+It is an AI agent doing the checking. It is not a study with real people.
+
+**Example.** In one reported case, an agent found that “Photos” opened a picture generator instead of a gallery, and that two save buttons did different things. The maintainer says normal tests had missed these. This is the maintainer’s account, not measured results.
+
 ## Put It to Work
 
 - **Before shipping:** test whether someone can find and complete a core task.
@@ -47,20 +63,27 @@ Use a compatible agent with authorized browser or application access. [Read the 
 
 [Visit the website](https://jongos.github.io/Longshot/) · [See an example report](REFERENCE.md#a-finding-you-can-act-on)
 
-## In the Hex Men Family
+## Part of the Hex Men Collection
 
-| Project | How It Complements This Work |
+[Hex Men](https://github.com/jongos/Hex-Men) is a directory of independent projects by Jon Gosier. Each project stands on its own; these are its members.
+
+| Project | What It Does |
 |---|---|
-| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine interfaces, documents and slides. |
-| [Style Science](https://github.com/jongos/style-science) | Connect design requirements to measurable checks and evidence. |
-| Spiral (not yet public) | Find gaps in workflow handoffs, ownership and recovery. |
-| Shatterstar (not yet public) | Simplify products while preserving important tasks. |
-| [Mojo](https://github.com/jongos/Mojo) | Make AI outputs clear and direct. |
-
-Hex Men (not yet public) brings together tools that complement your task.
+| [Hex Men](https://github.com/jongos/Hex-Men) | Directory of independent projects |
+| [Dazzler](https://github.com/jongos/Dazzler) | Create and refine expressive visual interfaces |
+| **Longshot** (this repository) | Independently test rendered UI tasks and provide replayable evidence |
+| [Style Science](https://github.com/jongos/style-science) | Provide inspectable design reasoning, constraints and evidence |
+| [Spiral](https://github.com/jongos/Spiral) | Rehearse role-limited asynchronous workflows before building |
+| [Shatterstar](https://github.com/jongos/Shatterstar) | Propose reversible evidence-backed simplification while preserving important tasks |
+| [Mojo](https://github.com/jongos/Mojo) | Remove repetition, needless nuance and overly cautious language from AI outputs |
+| [Colossus](https://github.com/jongos/Colossus) | Inventory selected developer workspaces read-only and surface evidence-backed questions |
 
 ## Further Reading
 
 [Detailed project reference](REFERENCE.md) · [License and font notices](REFERENCE.md#license)
 
 Created by Jon Gosier. Independent project; no Marvel affiliation or endorsement.
+
+## License
+
+Created by Jon Gosier. Original work is Apache-2.0; bundled Archivo font files retain their own license and notices. See [LICENSE](LICENSE).
