@@ -2,7 +2,7 @@
 
 # Longshot
 
-**Make the Interface Prove It.**
+**UI/UX Testing for Agents**
 
 Give Longshot an interface. It selects important tasks, follows the journeys and reports what works, what gets in the way and how to verify a fix. Want to direct the review? Supply your user roles and workflows.
 

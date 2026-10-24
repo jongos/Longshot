@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
-  <title id="title">Longshot — Make the Interface Prove It.</title>
+  <title id="title">Longshot — UI/UX Testing for Agents</title>
   <desc id="desc">Independent interface testing. Attempt, observe, challenge, verify.</desc>
   <rect width="1280" height="360" fill="#f5f1e8"/>
   <path d="M0 0H18V360H0Z" fill="#a33512"/>
   <g font-family="Arial, Helvetica, sans-serif" fill="#20231e">
     <text x="64" y="62" font-size="16" letter-spacing="3">INDEPENDENT INTERFACE TESTING</text>
     <text x="58" y="181" font-size="112" font-weight="800" letter-spacing="-5">Longshot</text>
-    <text x="64" y="235" font-size="30">Make the Interface Prove It.</text>
+    <text x="64" y="235" font-size="30">UI/UX Testing for Agents</text>
     <path d="M64 275H1216" stroke="#20231e"/>
     <text x="64" y="320" font-size="18">01  ATTEMPT</text>
     <text x="350" y="320" font-size="18">02  OBSERVE</text>
