@@ -8,6 +8,12 @@
 
 ## Evidence-supported follow-ups
 
+### Workflow Friction
+
+The walkthrough uses four optional lenses: choice visibility, action scope, context continuity and translation burden. Each connects a visible obstacle to a task, a recommendation and an acceptance test. Below-the-fold options, necessary prerequisites and useful technical terminology are not automatically defects. Preserve justified consent, replacement warnings and truthful service status.
+
+See the [attributed scene-creation case study](examples/scene-creation-case-study.md) for the supplied feedback and a proposed review example. The original review artifacts are not bundled; the reported 21 recommendations are not a performance score.
+
 ### Automatic and guided reviews
 
 Automatic mode selects a small set of important tasks from authorized context, weighing the core job, consequences, interruptions and recovery. Supplied roles/workflows activate guided scope; partial guidance is enough. Exact supplied steps are tested as a guided route. User-defined roles never grant account permissions. Task origin, assumptions and important exclusions stay visible in the report.

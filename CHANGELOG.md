@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-24 - Workflow Friction Lenses
+
+**Changed:** Added optional choice-visibility, action-scope, context-continuity and translation-burden checks to the walkthrough, routed from the skill entrypoint. Retained automatic/guided scope and working safeguards.
+
+**Added:** Attributed scene-creation feedback, the supplied quote and a clearly labeled proposed review example. Linked from README and reference docs.
+
+**Validation:** Focused skill/schema checks and authored contract cases; no live application review or major benchmark. Major tests remain paused.
+
 ## 2026-10-24 - Guide a Review
 
 Added a practical guidance guide and landing-page field guide: automatic start, four optional inputs, partial guidance, role handoffs, observable success criteria and a complete reusable brief. Dazzler shaped the existing visual system, Mojo the copy, Spiral the handoff example and Shatterstar the optional, progressively disclosed structure.

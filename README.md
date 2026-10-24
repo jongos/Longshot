@@ -15,6 +15,12 @@ Give Longshot an interface. It selects important tasks, follows the journeys and
 
 Each finding includes the starting state, actions, observed result and an acceptance test.
 
+Longshot looks for hidden choices, unclear action scope, lost context and terminology that makes the task harder. These checks follow the workflow you need tested.
+
+> Longshot was particularly useful because it shifted the question from “Does the app work?” to “Does the experience make sense to someone trying to create a scene?”
+
+— Agent feedback supplied by the maintainer. [Read the reported scene-creation case study and review example](examples/scene-creation-case-study.md).
+
 On follow-up reviews, Longshot retests the original problem and tracks resolved, recurring and untested findings. [See how comparisons work](skills/longshot-human-centered-ui/references/report-continuity.md).
 
 ## Give It a Goal
