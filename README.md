@@ -53,11 +53,12 @@ Use a compatible agent with authorized browser or application access. [Read the 
 |---|---|
 | [Dazzler](https://github.com/jongos/Dazzler) | Create and refine interfaces, documents and slides. |
 | [Style Science](https://github.com/jongos/style-science) | Connect design requirements to measurable checks and evidence. |
-| Spiral (not yet public) | Find gaps in workflow handoffs, ownership and recovery. |
-| Shatterstar (not yet public) | Simplify products while preserving important tasks. |
+| [Spiral](https://github.com/jongos/Spiral) | Find gaps in workflow handoffs, ownership and recovery. |
+| [Shatterstar](https://github.com/jongos/Shatterstar) | Simplify products while preserving important tasks. |
 | [Mojo](https://github.com/jongos/Mojo) | Make AI outputs clear and direct. |
+| [Colossus](https://github.com/jongos/Colossus) | Audit developer-workspace storage and reclaim space through reviewed, explicitly approved exact-file cleanup. |
 
-Hex Men (not yet public) brings together tools that complement your task.
+[Hex Men](https://github.com/jongos/Hex-Men) brings together tools that complement your task.
 
 ## Further Reading
 
