@@ -1,0 +1,9 @@
+{
+  "trace": [
+    "Click Submit.",
+    "Interface shows Completed."
+  ],
+  "fixture_service": "Returns simulated 503; no record persisted; Completed remains on screen.",
+  "retry": "Retry would create a new request.",
+  "boundary": "No paid or real service was used."
+}

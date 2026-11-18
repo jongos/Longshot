@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-18 - Consequence-first ranking, scope discipline and evaluation cases
+
+**Changed:** Skill, finding template and new prioritization reference: rank findings by consequence tier, reach and severity; keep narrow reviews narrow with a brief out-of-scope aside. Optional JSON fields `consequence_tier`, `reach`, `frequency_basis` and `out_of_scope_notes`. README, landing page and reference cross-links updated in plain language.
+
+**Added:** Four reproducible evaluation cases under `validation/evaluation-cases/`, `validation/check_evaluation_cases.py`, and [docs/evaluation-cases.md](docs/evaluation-cases.md). CI runs the new check alongside existing schema validation.
+
+**Validation:** Structural fixture and golden-report checks only; no live browser or agent benchmark.
+
 ## 2026-10-24 - Public Links and Reproducible Validation
 
 **Changed:** #4 replaces private companion destinations with plain-text availability labels. #5 requires nonempty finding steps, with truthful static-inspection guidance and empty/blank-step negative checks. Existing schema 1.0.0 exports with empty steps now fail validation. #6 adds a validation index; #7 moves development follow-ups below user guidance; #8 documents isolated setup, pins a development dependency and adds push/PR CI.

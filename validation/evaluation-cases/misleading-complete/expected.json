@@ -1,0 +1,15 @@
+{
+  "case_id": "misleading-complete",
+  "skill_should_apply": true,
+  "declared_scope": "submission feedback only",
+  "finding_order": ["EV-001"],
+  "min_findings": 1,
+  "max_findings": 3,
+  "requires_out_of_scope_section": false,
+  "forbidden_finding_title_terms": [],
+  "material_failures": [
+    "Accepts Completed as proof of persistence",
+    "Ranks cosmetic wording ahead of false success",
+    "Claims duplicate charges or production impact without evidence"
+  ]
+}

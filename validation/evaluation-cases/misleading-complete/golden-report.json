@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "eval-misleading-complete",
+  "mode": "synthetic_example",
+  "summary": "Submission shows Completed while the fixture service failed and nothing persisted.",
+  "environment": {
+    "application": "Synthetic submission flow",
+    "build": "evaluation-fixture",
+    "viewport": null,
+    "input_method": null,
+    "first_encounter": "not_applicable",
+    "boundary": "Feedback review only; no real or paid service."
+  },
+  "capabilities": [
+    {
+      "capability": "persistence verification",
+      "scope": "submission record",
+      "availability": "unavailable",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "Fixture service trace only."
+    }
+  ],
+  "journeys": [
+    {
+      "task": "Submit and confirm persistence",
+      "condition": "simulated 503",
+      "outcome": "uncertain",
+      "assistance": [],
+      "evidence_ids": ["E-001"],
+      "limit": "UI says Completed; backend failed in fixture."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-001",
+      "provenance": "synthetic",
+      "channel": "authored trace",
+      "locator": null,
+      "caption": "Completed remains after simulated 503 with no record."
+    }
+  ],
+  "findings": [
+    {
+      "id": "EV-001",
+      "title": "Success message remains after service failure",
+      "task": "Submit request",
+      "preconditions": "Synthetic flow; simulated 503; no persistence.",
+      "steps": [
+        "Click Submit.",
+        "Read Completed on screen."
+      ],
+      "expected": "Failure or pending state when nothing is stored.",
+      "observed": "Completed remains; fixture reports 503 and no record.",
+      "expectation_basis": "Feedback should match verified outcome for the submission task.",
+      "consequence": "User believes the request was received when it was not.",
+      "consequence_is_inference": true,
+      "classification": "confirmed_defect",
+      "severity": "critical",
+      "severity_reason": "False success on a consequential submission.",
+      "confidence": "high",
+      "confidence_reason": "Stipulated UI and fixture service outcome.",
+      "cause": "product",
+      "consequence_tier": "harms_trust",
+      "reach": "widespread",
+      "frequency_basis": "estimated: any service error path",
+      "evidence_ids": ["E-001"],
+      "recommendation": {
+        "change": "Replace or qualify Completed when persistence fails; offer retry with stable id when available.",
+        "preserve": "Clear success when record exists.",
+        "tradeoff": "Stricter gating may delay perceived completion.",
+        "disconfirming_result": "If failure removes Completed and shows retry, the mismatch would not reproduce."
+      },
+      "acceptance_test": "Given simulated 503, Submit must not leave Completed without error or retry guidance."
+    }
+  ],
+  "comparisons": [],
+  "strengths": [],
+  "limitations": [
+    "No live service or duplicate-submit test executed.",
+    "Retry behavior described in packet, not walked."
+  ],
+  "plan": [
+    "Align completion UI with verified persistence (harms_trust, widespread) before polish."
+  ],
+  "human_follow_up": [
+    "Submit and check whether the request exists outside the success message."
+  ]
+}

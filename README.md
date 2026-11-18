@@ -13,7 +13,7 @@ Give Longshot an interface. It selects important tasks, follows the journeys and
 - **When “done” is unclear:** distinguish a success message from a result that can actually be found and used.
 - **Beyond the default path:** examine relevant keyboard, zoom and narrow-screen conditions.
 
-Each finding includes the starting state, actions, observed result and an acceptance test.
+Each finding includes the starting state, actions, observed result and an acceptance test. Reports rank problems by what they cost users first—blocked tasks and false success before minor polish—and stay inside the scope you set.
 
 Longshot looks for hidden choices, unclear action scope, lost context and terminology that makes the task harder. These checks follow the workflow you need tested.
 

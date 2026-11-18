@@ -1,0 +1,10 @@
+{
+  "in_scope": {
+    "save_button": "Labelled Save order. Disabled until required fields validate. Shows inline Saved for 2s on success."
+  },
+  "out_of_scope_but_visible_in_fixture_notes": [
+    "Global header Search is unreachable by keyboard in the supplied narrow trace.",
+    "Account settings link appears on checkout but was not authorized."
+  ],
+  "boundary": "Authored synthetic packet; checkout Save control only."
+}

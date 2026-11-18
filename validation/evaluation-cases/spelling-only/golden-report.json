@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "eval-spelling-only",
+  "mode": "supplied_evidence",
+  "summary": "Bounded copy edit requested; Longshot UX review does not apply without interface access.",
+  "environment": {
+    "application": "Unknown",
+    "build": null,
+    "viewport": null,
+    "input_method": null,
+    "first_encounter": "not_applicable",
+    "boundary": "No application access; spelling correction only."
+  },
+  "capabilities": [
+    {
+      "capability": "visual interaction",
+      "scope": "label text",
+      "availability": "unavailable",
+      "coverage": "blocked",
+      "evidence_ids": [],
+      "limit": "No edit access."
+    }
+  ],
+  "journeys": [],
+  "evidence": [],
+  "findings": [],
+  "comparisons": [],
+  "strengths": [],
+  "limitations": [
+    "Request is an ordinary fix, not an interface test.",
+    "No screenshot or trace to verify the label in context."
+  ],
+  "plan": [
+    "Apply Savve draft → Save draft in source when authorized; no UX audit implied."
+  ],
+  "human_follow_up": []
+}

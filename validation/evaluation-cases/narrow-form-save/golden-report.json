@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "eval-narrow-form-save",
+  "mode": "supplied_evidence",
+  "summary": "Scoped to form save only: invalid email gives no feedback while the fixture rejects the draft.",
+  "environment": {
+    "application": "Synthetic contact form",
+    "build": "evaluation-fixture",
+    "viewport": null,
+    "input_method": null,
+    "first_encounter": "not_applicable",
+    "boundary": "Form completion only; no other pages authorized."
+  },
+  "capabilities": [
+    {
+      "capability": "visual interaction",
+      "scope": "save flow",
+      "availability": "unavailable",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "Authored trace only."
+    }
+  ],
+  "journeys": [
+    {
+      "task": "Save contact draft with invalid email",
+      "condition": "supplied trace",
+      "outcome": "blocked",
+      "assistance": [],
+      "evidence_ids": ["E-001"],
+      "limit": "No live browser."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-001",
+      "provenance": "supplied",
+      "channel": "authored trace",
+      "locator": null,
+      "caption": "Save appears idle; fixture log reports validation rejection."
+    }
+  ],
+  "findings": [
+    {
+      "id": "EV-001",
+      "title": "Save gives no feedback when validation rejects the draft",
+      "task": "Save contact draft",
+      "preconditions": "Invalid email test@ entered; scoped form review.",
+      "steps": [
+        "Enter test@.",
+        "Press Save."
+      ],
+      "expected": "Visible error or status when save cannot complete.",
+      "observed": "No error or status; focus remains on Save; fixture rejects draft.",
+      "expectation_basis": "Basic form feedback convention and fixture rejection log.",
+      "consequence": "User may believe the draft saved when it did not.",
+      "consequence_is_inference": true,
+      "classification": "confirmed_defect",
+      "severity": "high",
+      "severity_reason": "Core save goal fails without explanation.",
+      "confidence": "high",
+      "confidence_reason": "Supplied trace and fixture log align.",
+      "cause": "product",
+      "consequence_tier": "harms_trust",
+      "reach": "widespread",
+      "frequency_basis": "estimated: any invalid format on save",
+      "evidence_ids": ["E-001"],
+      "recommendation": {
+        "change": "Show inline validation linked to the email field when save is rejected.",
+        "preserve": "Successful save path with test@example.invalid.",
+        "tradeoff": "Earlier validation may interrupt typing; keep save-attempt feedback at minimum.",
+        "disconfirming_result": "If authorized replay shows visible rejection, this finding would not reproduce."
+      },
+      "acceptance_test": "Given test@, press Save; an error linked to email appears and no draft is created without silent failure."
+    }
+  ],
+  "comparisons": [],
+  "strengths": [
+    "Valid address saves with visible confirmation in the control trace."
+  ],
+  "limitations": [
+    "Authored packet only; no executed browser session.",
+    "Admin and other pages were out of scope and not reviewed."
+  ],
+  "plan": [
+    "Add visible validation feedback on failed save (harms_trust, widespread) before any polish on layout."
+  ],
+  "human_follow_up": [
+    "Enter an invalid email and press Save. What do you think happened?"
+  ]
+}

@@ -1,0 +1,1 @@
+Review only the Save button on the checkout form. Skip navigation, marketing pages and account settings.

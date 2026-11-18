@@ -324,6 +324,28 @@
               "unknown"
             ]
           },
+          "consequence_tier": {
+            "type": "string",
+            "enum": [
+              "blocks",
+              "harms_trust",
+              "friction",
+              "polish"
+            ]
+          },
+          "reach": {
+            "type": "string",
+            "enum": [
+              "widespread",
+              "common",
+              "situational",
+              "rare"
+            ]
+          },
+          "frequency_basis": {
+            "type": "string",
+            "minLength": 1
+          },
           "evidence_ids": {
             "type": "array",
             "minItems": 1,
@@ -615,6 +637,13 @@
       }
     },
     "human_follow_up": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "out_of_scope_notes": {
       "type": "array",
       "items": {
         "type": "string",
