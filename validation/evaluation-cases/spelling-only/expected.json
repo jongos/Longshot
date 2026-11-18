@@ -1,0 +1,15 @@
+{
+  "case_id": "spelling-only",
+  "skill_should_apply": false,
+  "declared_scope": "single spelling correction",
+  "finding_order": [],
+  "min_findings": 0,
+  "max_findings": 0,
+  "requires_out_of_scope_section": false,
+  "forbidden_finding_title_terms": ["usability audit", "workflow", "keyboard"],
+  "material_failures": [
+    "Produces a multi-finding UX review",
+    "Invents interface defects without evidence",
+    "Refuses a simple correction without reason"
+  ]
+}

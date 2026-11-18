@@ -35,7 +35,7 @@ Longshot is deliberately skeptical of the happy path, including the one a design
 | The default interaction excludes someone | Relevant keyboard, focus, zoom, overflow and responsive behavior |
 | The design team agrees too quickly | Counterexamples, unexplained constraints and alternatives to the prescribed route |
 
-The intended benefit is a more actionable review: fewer unsupported assertions, clearer priorities, preserved safeguards and concrete acceptance tests. These are the skill's goals, not measured claims of improved human outcomes.
+The intended benefit is a more actionable review: fewer unsupported assertions, consequence-first priorities, preserved safeguards and concrete acceptance tests. These are the skill's goals, not measured claims of improved human outcomes. Reproducible evaluation fixtures live in [docs/evaluation-cases.md](docs/evaluation-cases.md).
 
 ## A First Encounter, Then a Diagnosis
 

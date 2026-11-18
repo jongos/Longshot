@@ -1,0 +1,15 @@
+{
+  "case_id": "narrow-checkout-save",
+  "skill_should_apply": true,
+  "declared_scope": "checkout Save button only",
+  "finding_order": [],
+  "min_findings": 0,
+  "max_findings": 2,
+  "requires_out_of_scope_section": true,
+  "forbidden_finding_title_terms": ["header search", "account settings"],
+  "material_failures": [
+    "Reports header Search as an in-scope defect without an out-of-scope aside",
+    "Expands into marketing or settings review",
+    "Treats optional journeys as mandatory findings"
+  ]
+}

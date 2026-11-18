@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "eval-narrow-checkout-save",
+  "mode": "synthetic_example",
+  "summary": "Checkout Save control behaves per fixture; unrelated header and settings issues noted out of scope.",
+  "environment": {
+    "application": "Synthetic checkout",
+    "build": "evaluation-fixture",
+    "viewport": null,
+    "input_method": null,
+    "first_encounter": "not_applicable",
+    "boundary": "Save button on checkout only."
+  },
+  "capabilities": [
+    {
+      "capability": "keyboard navigation",
+      "scope": "checkout Save",
+      "availability": "unknown",
+      "coverage": "untested",
+      "evidence_ids": [],
+      "limit": "Save-only scope."
+    }
+  ],
+  "journeys": [
+    {
+      "task": "Save order when fields valid",
+      "condition": "synthetic fixture",
+      "outcome": "completed",
+      "assistance": [],
+      "evidence_ids": ["E-001"],
+      "limit": "Described behavior only."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E-001",
+      "provenance": "synthetic",
+      "channel": "authored description",
+      "locator": null,
+      "caption": "Save enables after validation; brief Saved confirmation."
+    }
+  ],
+  "findings": [],
+  "comparisons": [],
+  "strengths": [
+    "Save disables until required fields validate and shows brief Saved confirmation in the fixture."
+  ],
+  "limitations": [
+    "Authored description only; Save keyboard path not executed.",
+    "Header Search and account settings were not authorized."
+  ],
+  "plan": [],
+  "human_follow_up": [],
+  "out_of_scope_notes": [
+    "Header Search keyboard reachability was mentioned in fixture notes but not tested; requires a navigation-scope review.",
+    "Account settings on checkout were not opened; out of scope for Save-only request."
+  ]
+}

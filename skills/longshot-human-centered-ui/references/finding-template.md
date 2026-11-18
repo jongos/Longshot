@@ -9,11 +9,12 @@ For a narrow review, combine the finding fields into one short paragraph rather 
 - Review mode and task selection: automatic by default or user-guided; supplied roles/workflows and priorities, inferred gaps and why these journeys matter. Keep this compact.
 
 - Disposition: what can/cannot be concluded about the tested journey; mention blockers directly.
-- Scope and coverage: intended users/goals, environment/version, authorized data/actions, paths and states attempted, viewport/input method where known.
+- Scope and coverage: intended users/goals, environment/version, authorized data/actions, paths and states attempted, viewport/input method where known. State what was excluded and why when the request was narrow.
+- Out of scope (brief): one line per item that may matter but was not tested; do not expand the review to cover them here.
 - Execution and cause: completed, blocked or untested branches; distinguish product behavior from tool/environment limitations or unknown causes. A blocked review can coexist with correct product behavior.
 - Assistance and first encounter: record backtracking, ordinary UI help and privileged information separately from outcome (including uncertain). Disclose prior solution knowledge; distinguish first-pass attempts from diagnostic completion.
 - Evidence limits: live agent observations versus supplied traces/screenshots versus simulations; inaccessible or untested behavior; no human participant research unless actually supplied/performed.
-- Most consequential findings, followed by working behavior worth preserving.
+- Most consequential findings in explicit order (see [prioritization and scope](prioritization-and-scope.md): tier → reach → severity → confidence), followed by working behavior worth preserving.
 - Relevant host capabilities: availability separately from scoped attempted/verified coverage, with evidence and limits. See [report continuity](report-continuity.md).
 
 ## Finding
@@ -31,6 +32,8 @@ Explain uncertain matches and split/merge relationships without dropping old IDs
 - **Validation and alternatives:** reproduction or countercheck actually performed, competing explanations, and remaining proposed checks. Identify the evidence channel; do not call an intended test executed.
 - **Expected / observed:** state both; give the requirement, contract, convention or goal supporting the expectation.
 - **Human consequence:** concrete potential impact; label inference and unknown frequency.
+- **Consequence tier:** `blocks` / `harms_trust` / `friction` / `polish` (primary sort key).
+- **Reach:** `widespread` / `common` / `situational` / `rare`; **frequency basis:** measured, owner-reported or estimated.
 - **Classification:** confirmed defect, usability concern or aesthetic preference.
 - **Severity:** critical / high / medium / low, with rationale. Use critical for credible severe loss, unintended charges or misleading consequential outcomes; high for blocked important tasks or lost work; medium for substantial recoverable friction; low for minor issues. Adjust for impact, reach and workarounds rather than using labels mechanically. Uncertainty does not erase possible severity.
 - **Confidence:** high / medium / low, justified by reproducibility, coverage and competing explanations. Confidence is separate from severity.
@@ -42,7 +45,7 @@ Explain uncertain matches and split/merge relationships without dropping old IDs
 
 ## Improvement plan
 
-Group findings by the user's outcome, such as complete the primary task, retain work or recover safely. Sequence blockers and consequential risks first, identify dependencies and link acceptance tests. Avoid a composite score hiding a severe finding. Record unresolved product constraints before recommending removal of mandatory steps.
+Group findings by the user's outcome, such as complete the primary task, retain work or recover safely. Within each group, keep the same consequence-first order as the findings list (tier → reach → severity → confidence). Identify dependencies and link acceptance tests. Avoid a composite score hiding a severe finding. Record unresolved product constraints before recommending removal of mandatory steps.
 
 ## Human follow-up
 

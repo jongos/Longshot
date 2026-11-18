@@ -25,6 +25,7 @@ python -m venv .venv
 # macOS/Linux:
 .venv/bin/python -m pip install -r validation/requirements.txt
 .venv/bin/python validation/check_report_examples.py
+.venv/bin/python validation/check_evaluation_cases.py
 ```
 
 On Windows PowerShell:
@@ -35,6 +36,6 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe validation/check_report_examples.py
 ```
 
-Expected output begins `PASS: two examples`. The check validates schema structure, the two sample reports, evidence references and anchors, prior-finding coverage, resolution requirements and invalid exports (including empty reproduction steps). It does not establish evidence truth or usability performance.
+Expected output begins `PASS: two examples`, then `PASS: 4 evaluation cases`. The first check validates schema structure, the two sample reports, evidence references and anchors, prior-finding coverage, resolution requirements and invalid exports (including empty reproduction steps). The evaluation-case check validates fixtures, golden reports, consequence-first finding order and narrow-scope expectations under `validation/evaluation-cases/`. See [docs/evaluation-cases.md](../docs/evaluation-cases.md). Neither check establishes evidence truth or usability performance.
 
 [GitHub Actions](../.github/workflows/validate.yml) runs this same check on pushes and pull requests. These dependencies and CI are development-only; skill users need neither Python nor jsonschema. CI does not run browsers, paid evaluations, benchmarks or human studies.

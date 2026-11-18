@@ -1,0 +1,10 @@
+{
+  "goal": "save a contact draft",
+  "trace": [
+    "Enter test@ in the email field.",
+    "Press Save.",
+    "Browser focus remains on Save; values remain; no error or status appears."
+  ],
+  "fixture_log": "Validation rejects the address and no draft is created.",
+  "control": "Correct address test@example.invalid saves successfully with visible confirmation."
+}

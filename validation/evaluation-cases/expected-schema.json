@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Longshot evaluation case expectation",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "skill_should_apply": {
+      "type": "boolean"
+    },
+    "declared_scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "finding_order": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "min_findings": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_findings": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "requires_out_of_scope_section": {
+      "type": "boolean"
+    },
+    "forbidden_finding_title_terms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "material_failures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "skill_should_apply",
+    "declared_scope",
+    "finding_order",
+    "min_findings",
+    "max_findings",
+    "requires_out_of_scope_section",
+    "forbidden_finding_title_terms",
+    "material_failures"
+  ]
+}
